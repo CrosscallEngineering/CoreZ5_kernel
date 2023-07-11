@@ -1,0 +1,7 @@
+
+config BEIDOU_GPS_CTRL
+	bool "enable beidou gps chip"
+	default n
+	help
+	  Say 'y' here to support BEIDOU chip
+

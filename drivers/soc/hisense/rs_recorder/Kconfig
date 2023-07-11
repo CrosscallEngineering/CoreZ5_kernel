@@ -1,0 +1,9 @@
+
+config SUPPORT_WARM_RESET
+	bool "current platform support warm reset"
+	depends on RS_RECORDER_SUPPORT
+	default n
+	help
+	  If use platform support warm reset, then say Y,
+	  or N.
+

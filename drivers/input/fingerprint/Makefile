@@ -1,0 +1,1 @@
+obj-$(CONFIG_FINGERPRINT_FPC_FPC1542) += fpc/

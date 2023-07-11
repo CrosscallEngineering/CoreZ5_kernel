@@ -1,0 +1,35 @@
+comment "Hisense product Infomation"
+config MACH_HISENSE_SMARTPHONE
+	tristate "HISENSE SMARTPHONE"
+	default n
+	help
+	  Support for the hisense samrtphone board.
+
+config HISENSE_VENDOR_NAME
+	depends on MACH_HISENSE_SMARTPHONE
+	string "Hisense vendor info"
+	default ""
+	help
+	  The vendor name of product.
+
+config HISENSE_PRODUCT_NAME
+	depends on MACH_HISENSE_SMARTPHONE
+	string "Hisense product info"
+	default ""
+	help
+	  The product name.
+
+config HISENSE_DEBUG_CTRL
+	bool "Hisense debug method"
+	depends on MACH_HISENSE_SMARTPHONE
+	default n
+	help
+	  Say Y when you need debug your device.
+
+config HISENSE_BOOT_FLOW
+	bool "Hisense boot flow"
+	depends on MACH_HISENSE_SMARTPHONE
+	default n
+	help
+	  Provide the special boot flow.
+

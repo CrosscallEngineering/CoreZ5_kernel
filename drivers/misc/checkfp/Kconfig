@@ -1,0 +1,5 @@
+config FINGERPRINT_VENDOR_CHECK
+	bool "fingerprint vendor check id pin"
+	default n
+	help
+		this feature is for checking fingerprint vendor

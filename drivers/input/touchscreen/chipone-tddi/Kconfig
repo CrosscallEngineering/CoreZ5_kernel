@@ -1,0 +1,35 @@
+#
+# CHIPONE Touchscreen driver configuration
+#
+
+config TOUCHSCREEN_CHIPONE
+	tristate "CHIPONE Touchscreen"
+	help
+	  Say Y here if you have CHIPONE touch panel.
+	  If unsure, say N.
+config TOUCHSCREEN_CHIPONE_GESTURE
+       bool "chipone touchscreens gesture function"
+       depends on TOUCHSCREEN_CHIPONE
+       default n
+       help
+         Say Y here if you need a chipone touchscreen gesture function.
+	 else say N
+
+config TOUCHSCREEN_CHIPONE_GLOVE
+       bool "chipone touchscreens glove function"
+       depends on TOUCHSCREEN_CHIPONE
+       default n
+       help
+         Say Y here if you need a chipone touchscreen glove function.
+	 else say N
+config TOUCHSCREEN_CHIPONE_INCELL_CHIP
+       bool "Chipone incell touchscreens support."
+       depends on TOUCHSCREEN_CHIPONE
+       help
+         Say Y here if you need a chipone incell touchscreen function.
+	 else say N
+config TOUCHSCREEN_CHIPONE_IN_QGKI
+	bool "Chipone driver in QGKI"
+	depends on TOUCHSCREEN_CHIPONE
+	help
+	  This enables support for Chipone driver test over Board.

@@ -1,0 +1,1 @@
+obj-$(CONFIG_FINGERPRINT_VENDOR_CHECK) += get_fp_vendor.o
